@@ -25,10 +25,10 @@ useEffect(() => {
 window.addEventListener('resize', showButton);
 
   return (
-    <>
+    
       <nav className='navbar'>
         <div className='navbar-container'>
-            <Link to="/" className='navbar-logo'>
+            <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
                 TRVL <i className='fab fa-typo3'></i>
             </Link>
             <div className='menu-icon' onClick={handleClick}>
@@ -56,10 +56,10 @@ window.addEventListener('resize', showButton);
                     </Link>
                 </li>
             </ul>
-            {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
+           {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
         </div>
       </nav>
-    </>
+    
   )
 }
 
