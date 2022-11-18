@@ -5,12 +5,13 @@ import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 
 function App() {
+  console.log(window.location);
   return (
     <>
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' component={Home}/> 
+        <Route path='/' element={<Home />}/> 
       </Routes>
     </Router>
     </>
