@@ -21,16 +21,24 @@ function Cards() {
                 label='Adventure'
                 path='/services'
                 />
+            </ul>
+            <ul className='cards__items'>
                 <CardItem 
                 src={require('../images/img-4.jpg')}
-                text='Comptete at the worlds most exclusive football venue.'
+                text='Compete at the worlds most exclusive football venue.'
                 label='Competition'
                 path='/services'
                 />
                 <CardItem 
                 src={require('../images/img-5.jpg')}
-                text='Relax, at the renowned HOTEL.'
-                label='Service'
+                text='Stay at the most luxurius hotels.'
+                label='Luxury'
+                path='/services'
+                />
+                <CardItem 
+                src={require('../images/img-6.jpg')}
+                text='Experience the busy streets of London.'
+                label='Travel'
                 path='/services'
                 />
             </ul>
